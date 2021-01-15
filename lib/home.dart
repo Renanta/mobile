@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tecos_app/artikel.dart';
 
 import 'anggota.dart';
 import 'map.dart';
@@ -54,6 +55,19 @@ class Home extends StatelessWidget {
                       MaterialPageRoute(
                         builder: (context){
                           return Members();
+                        },
+                      ),
+                    );
+                  },
+                ),
+                listCard(
+                  name : "Artikel",
+                  press: (){
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context){
+                          return artikel();
                         },
                       ),
                     );
